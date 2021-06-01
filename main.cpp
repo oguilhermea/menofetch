@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <cstdlib>
+#include <cstdio>
 
 int main(int argc, char** argv) {
     int n = 1;
@@ -9,7 +10,10 @@ int main(int argc, char** argv) {
         printf("\t%s\n", "endiannes: BE");
     }
     printf("\tbit system: %d\n", sizeof(void *) * 8); 
-
+    // Need to fix formatation
+    // system("cat /proc/cpuinfo | grep \"address size\" | head -1");
+    // system("cat /proc/cpuinfo | grep \"model name\" | head -1");
+    
     printf("%s\n", "Data Type Size(Bytes):");
     printf("\tchar: %d\n", sizeof(char));
     printf("\tuchar: %d\n", sizeof(unsigned char));
